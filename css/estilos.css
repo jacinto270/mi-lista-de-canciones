@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+
+body{
+    font-family: cursive;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding:  0 1rem;
+    
+    
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+p{
+    text-align: center;
+}
+
+#pantalla{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(82, 146, 80);
+    border-radius: 30px;
+}
+
+
+#contador {
+    font-size:  1.4rem;
+    font-weight: bold;
+    color: #093c05;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+input {
+    font-size: 2rem;
+    padding: 0.4rem;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: bisque;
+    
+  
+
+}
+
+button {
+    border-radius: 40px;
+    padding: 0.4rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: chartreuse;
+    
+
+}
+
+
+@media(min-width: 600px){
+    input{
+    width: 50%;
+    margin: auto;
+ }
+
+    
+}
+#lista{
+    margin: auto;
+    list-style: none;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+#lista button {
+
+    background-color: aqua;
+    font-family: fantasy;
+   
+}
+#mensaje {
+  font-style: italic;
+
+
+}
+.itemLista {
+
+    display: flex;
+    
+    
+  
+}
+
+
+

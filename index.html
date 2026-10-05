@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mi lista de canciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    <div id="pantalla">
+        <h1>mi lista de canciones</h1>
+        <p id="contador"></p>
+
+        <label for="nueva">añadir cancion</label>
+        <input type="text" id="nueva" placeholder="titulo - artista" autocomplete="off">
+        <p id="mensaje" aria-live="polite"></p>
+        <button id = "anadir">añadir</button>
+
+
+        <label for="buscar">buscar</label>
+        <input type="search" id="buscar" autocomplete="off">
+        <button id="ordenar">ordenar</button>
+        
+       
+        <ol id="lista">
+
+        </ol>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
