@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mi lista de canciones</title>
+    <title>Mi lista de canciones</title>
+    <meta name="description" content="Playlist moderna y elegante con estilo Estudio 54">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    
 </head>
 <body>
-    <div id="pantalla">
-        <h1>mi lista de canciones</h1>
-        <p id="contador"></p>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
 
-        <label for="nueva">añadir cancion</label>
-        <input type="text" id="nueva" placeholder="titulo - artista" autocomplete="off">
-        <p id="mensaje" aria-live="polite"></p>
-        <button id = "anadir">añadir</button>
+    <main class="pantalla" aria-label="Lista de canciones">
+        <header class="encabezado">
+            <div>
+                <p class="eyebrow">playlist</p>
+                <h1>mi lista de canciones</h1>
+            </div>
+            <span class="badge">Estudio 54</span>
+        </header>
 
+        <section class="panel panel-principal">
+            <div class="campo">
+                <label for="nueva">Añadir canción</label>
+                <div class="input-row">
+                    <input type="text" id="nueva" placeholder="Título - artista" autocomplete="off">
+                    <button id="anadir" class="boton boton-primario">Añadir</button>
+                </div>
+            </div>
 
-        <label for="buscar">buscar</label>
-        <input type="search" id="buscar" autocomplete="off">
-        <button id="ordenar">ordenar</button>
-        
-       
-        <ol id="lista">
+            <div class="campo">
+                <label for="buscar">Buscar</label>
+                <div class="input-row input-row-compact">
+                    <input type="search" id="buscar" placeholder="Busca por título o artista" autocomplete="off">
+                    <button id="ordenar" class="boton boton-secundario">Ordenar</button>
+                </div>
+            </div>
 
-        </ol>
-    </div>
+            <p id="mensaje" class="mensaje" aria-live="polite"></p>
+            <p id="contador" class="contador" aria-live="polite"></p>
+        </section>
 
-
+        <section class="panel panel-lista">
+            <ol id="lista" class="lista" aria-live="polite"></ol>
+        </section>
+    </main>
 
     <script src="js/app.js"></script>
-    
 </body>
 </html>
